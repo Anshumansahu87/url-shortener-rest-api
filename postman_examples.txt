@@ -1,0 +1,13 @@
+POST http://localhost:5000/api/shorten
+Body -> raw -> JSON
+{
+  "url": "https://github.com/"
+}
+
+GET http://localhost:5000/api/urls
+
+GET http://localhost:5000/api/url/<short_code>
+
+DELETE http://localhost:5000/api/url/<short_code>
+
+GET http://localhost:5000/health
